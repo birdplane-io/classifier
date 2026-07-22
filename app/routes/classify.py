@@ -1,4 +1,5 @@
 """Classify endpoint."""
+import os
 from fastapi import APIRouter
 from pydantic import BaseModel
 from app.classifier import classify as classify_func
@@ -16,10 +17,20 @@ class ClassifyResponse(BaseModel):
     result: str
     confidence: float
     input: str
+    method: str
 
 
 @router.post("/classify", response_model=ClassifyResponse)
 async def classify(request: ClassifyRequest):
-    """Classify input data."""
+    """
+    Classify input data.
+    
+    Uses the classifier specified by CLASSIFIER_TYPE environment variable.
+    """
     result = classify_func(request.data)
+    
+    # Ensure method is included in response
+    if "method" not in result:
+        result["method"] = os.getenv("CLASSIFIER_TYPE", "llm")
+    
     return ClassifyResponse(**result)
