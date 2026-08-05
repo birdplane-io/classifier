@@ -6,6 +6,7 @@ from app.classifiers.embedding import EmbeddingClassifier
 
 # Global classifier instance
 _classifier: Classifier | None = None
+_classifier_type: str | None = None
 
 
 def get_classifier() -> Classifier:
@@ -15,10 +16,21 @@ def get_classifier() -> Classifier:
     Returns:
         The active Classifier instance
     """
-    global _classifier
-    if _classifier is None:
+    global _classifier, _classifier_type
+    current_type = os.getenv("CLASSIFIER_TYPE", "llm").lower()
+
+    if _classifier is None or _classifier_type != current_type:
         _classifier = _create_classifier()
+        _classifier_type = current_type
+
     return _classifier
+
+
+def reset_classifier_cache() -> None:
+    """Reset cached classifier instance (useful for tests)."""
+    global _classifier, _classifier_type
+    _classifier = None
+    _classifier_type = None
 
 
 def _create_classifier() -> Classifier:
