@@ -2,6 +2,10 @@
 
 A minimal FastAPI server with v1 API endpoints for classification tasks.
 
+## Implementation Documentation
+
+For architecture and implementation details, see `IMPLEMENTATION.md`.
+
 ## Setup
 
 Install dependencies using [uv](https://astral.sh/uv/):
