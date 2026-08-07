@@ -7,8 +7,10 @@ class EmbeddingClassifier(Classifier):
 
     def __init__(self):
         """Initialize embedding classifier."""
-        # TODO: Initialize embedding model (e.g., sentence-transformers, OpenAI embeddings)
-        pass
+        raise NotImplementedError(
+            "EmbeddingClassifier is not implemented yet. "
+            "Use CLASSIFIER_TYPE=llm."
+        )
 
     def classify(self, data: str) -> dict:
         """
@@ -20,10 +22,7 @@ class EmbeddingClassifier(Classifier):
         Returns:
             Classification result
         """
-        # Stub implementation
-        return {
-            "result": "embedding_classified",
-            "confidence": 0.72,
-            "input": data[:50],
-            "method": "embedding",
-        }
+        raise NotImplementedError(
+            "EmbeddingClassifier is not implemented yet. "
+            "Use CLASSIFIER_TYPE=llm."
+        )
