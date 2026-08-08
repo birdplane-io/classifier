@@ -17,7 +17,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["app"]
+packages = ["app", "evaluation"]
 
 [build-system]
 requires = ["hatchling"]
