@@ -1,59 +1,42 @@
-"""Classifier factory and interface."""
-import os
-from app.classifiers.base import Classifier
-from app.classifiers.llm import LLMClassifier
-from app.classifiers.embedding import EmbeddingClassifier
+"""Classifier and classification-service construction."""
 
-# Global classifier instance
-_classifier: Classifier | None = None
+from openai import OpenAI
 
-
-def get_classifier() -> Classifier:
-    """
-    Get the current classifier instance.
-    
-    Returns:
-        The active Classifier instance
-    """
-    global _classifier
-    if _classifier is None:
-        _classifier = _create_classifier()
-    return _classifier
+from app.classifiers import Classifier, LLMClassifier
+from app.config import ClassifierBackend, Settings
+from app.prompts import load_classification_prompt
+from app.service import ClassificationService
 
 
-def _create_classifier() -> Classifier:
-    """
-    Create a classifier based on environment variable.
-    
-    CLASSIFIER_TYPE environment variable options:
-    - "llm" (default) — LLM-based classifier
-    - "embedding" — Embedding-based classifier
-    
-    Returns:
-        Initialized Classifier instance
-    """
-    classifier_type = os.getenv("CLASSIFIER_TYPE", "llm").lower()
-    
-    if classifier_type == "embedding":
-        return EmbeddingClassifier()
-    elif classifier_type == "llm":
-        return LLMClassifier()
-    else:
-        raise ValueError(
-            f"Unknown CLASSIFIER_TYPE: {classifier_type}. "
-            "Supported values: 'llm', 'embedding'"
+class ClassifierConfigurationError(ValueError):
+    """The selected backend cannot be constructed."""
+
+
+def create_classifier(settings: Settings) -> Classifier:
+    """Construct the configured classifier or fail during startup."""
+
+    if settings.classifier_backend is ClassifierBackend.LIGHTWEIGHT:
+        raise ClassifierConfigurationError(
+            "The lightweight classifier backend is not implemented"
         )
 
+    client = OpenAI(
+        api_key=settings.llm_api_key.get_secret_value(),
+        base_url=str(settings.llm_base_url),
+        timeout=settings.llm_timeout,
+        max_retries=0,
+    )
+    return LLMClassifier(
+        client=client,
+        model=settings.llm_model,
+        prompt=load_classification_prompt(),
+    )
 
-def classify(data: str) -> dict:
-    """
-    Classify input data using the active classifier.
-    
-    Args:
-        data: Input text to classify
-        
-    Returns:
-        Classification result dictionary
-    """
-    classifier = get_classifier()
-    return classifier.classify(data)
+
+def create_classification_service(settings: Settings) -> ClassificationService:
+    """Construct a service with immutable classifier provenance."""
+
+    return ClassificationService(
+        classifier=create_classifier(settings),
+        model=settings.llm_model,
+    )

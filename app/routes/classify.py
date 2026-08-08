@@ -1,36 +1,36 @@
 """Classify endpoint."""
-import os
-from fastapi import APIRouter
-from pydantic import BaseModel
-from app.classifier import classify as classify_func
+
+from fastapi import APIRouter, Depends, HTTPException, Request, status
+
+from app.classifiers import ClassificationInvalidResponse, ClassificationUnavailable
+from app.models import ClassificationResponse, ClassifyRequest
+from app.service import ClassificationService
 
 router = APIRouter(tags=["classify"])
 
 
-class ClassifyRequest(BaseModel):
-    """Request model for classify endpoint."""
-    data: str
+def get_classification_service(request: Request) -> ClassificationService:
+    """Resolve the lifespan-owned service from application state."""
+
+    return request.app.state.classification_service
 
 
-class ClassifyResponse(BaseModel):
-    """Response model for classify endpoint."""
-    result: str
-    confidence: float
-    input: str
-    method: str
+@router.post("/classify", response_model=ClassificationResponse)
+def classify(
+    request: ClassifyRequest,
+    service: ClassificationService = Depends(get_classification_service),
+) -> ClassificationResponse:
+    """Classify transcript text in FastAPI's synchronous worker pool."""
 
-
-@router.post("/classify", response_model=ClassifyResponse)
-async def classify(request: ClassifyRequest):
-    """
-    Classify input data.
-    
-    Uses the classifier specified by CLASSIFIER_TYPE environment variable.
-    """
-    result = classify_func(request.data)
-    
-    # Ensure method is included in response
-    if "method" not in result:
-        result["method"] = os.getenv("CLASSIFIER_TYPE", "llm")
-    
-    return ClassifyResponse(**result)
+    try:
+        return service.classify(request.text)
+    except ClassificationUnavailable as error:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Classification backend is unavailable",
+        ) from error
+    except ClassificationInvalidResponse as error:
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="Classification backend returned an invalid response",
+        ) from error
