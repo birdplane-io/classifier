@@ -46,6 +46,11 @@ def test_one_structured_output_call_returns_parsed_result() -> None:
         ],
         temperature=0,
         response_format=ClassificationResult,
+        extra_body={
+            "chat_template_kwargs": {
+                "enable_thinking": False,
+            }
+        },
     )
 
 

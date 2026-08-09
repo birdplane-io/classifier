@@ -30,6 +30,11 @@ class LLMClassifier:
                 ],
                 temperature=0,
                 response_format=ClassificationResult,
+                extra_body={
+                    "chat_template_kwargs": {
+                        "enable_thinking": False,
+                    }
+                },
             )
         except (openai.LengthFinishReasonError, openai.ContentFilterFinishReasonError) as error:
             raise ClassificationInvalidResponse("LLM output was incomplete") from error

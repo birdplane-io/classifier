@@ -51,7 +51,7 @@ It returns the canonical `ClassificationResult` plus immutable provenance:
 
 Valid formats are `interview`, `monologue`, `conversation`, `panel`, `lecture`, and `presentation`. Valid routes are `science`, `current_affairs`, `education`, `business`, `arts_and_culture`, and `general`. Quality flags are independently composable: `incomplete`, `poor_audio`, `overlapping_speech`, `speaker_labels_missing`, `repetition`, and `non_english`.
 
-Every request makes at most one application-level `chat.completions.parse` call with temperature zero and the canonical Pydantic model as its response format. The service does not repair JSON, retry prompts, select fallback models, normalize near-matching labels, or return heuristic classifications. Retry and model-fallback policy belongs at the LiteLLM gateway.
+Every request makes at most one application-level `chat.completions.parse` call with temperature zero and the canonical Pydantic model as its response format. Classifier requests also send `chat_template_kwargs.enable_thinking=false`, preventing hybrid llama.cpp models from spending time on reasoning while leaving the shared model server's default unchanged for other services. The service does not repair JSON, retry prompts, select fallback models, normalize near-matching labels, or return heuristic classifications. Retry and model-fallback policy belongs at the LiteLLM gateway.
 
 ### Errors
 

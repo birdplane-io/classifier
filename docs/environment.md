@@ -20,7 +20,7 @@ LLM_MODEL=document-classifier
 LLM_TIMEOUT=30
 ```
 
-The service uses the official OpenAI client against the gateway's `base_url`. It sends one structured-output request with temperature fixed internally at zero and SDK retries disabled. Provider choice, retry policy, rate-limit handling, and fallback models are gateway concerns, so there are no service settings for provider, temperature, maximum output tokens, or fallback models.
+The service uses the official OpenAI client against the gateway's `base_url`. It sends one structured-output request with temperature fixed internally at zero and SDK retries disabled. Each classifier request includes `chat_template_kwargs.enable_thinking=false` through the OpenAI-compatible request body. llama.cpp applies that override only to the classification request, so a shared server can retain its normal reasoning default for other clients. Provider choice, retry policy, rate-limit handling, and fallback models are gateway concerns, so there are no service settings for provider, temperature, maximum output tokens, or fallback models.
 
 Configuration errors fail the application lifespan before it begins serving traffic. Runtime gateway/API failures become a sanitized HTTP 503; complete upstream responses that cannot yield the exact schema become a sanitized HTTP 502.
 
