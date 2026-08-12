@@ -1,0 +1,1400 @@
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
+HTTP 200
+{
+  "classification": {
+    "format": "lecture",
+    "route": "science",
+    "quality_flags": []
+  },
+  "metadata": {
+    "backend": "llm",
+    "schema_version": "1",
+    "model": "local-deep",
+    "prompt_version": "1"
+  }
+}
