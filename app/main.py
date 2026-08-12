@@ -1,37 +1,43 @@
 """Main FastAPI application."""
-import os
 
-from dotenv import load_dotenv
-
-# Load environment variables from .env file
-load_dotenv()
+from collections.abc import AsyncIterator
+from contextlib import asynccontextmanager
 
 from fastapi import FastAPI
-from app.routes import health, classify
-from app.config import Config
 
-# Load and validate configuration
-try:
-    Config.validate()
-except ValueError as e:
-    raise RuntimeError(f"Configuration error: {e}")
+from app.classifier import create_classification_service
+from app.config import Settings, get_settings
+from app.routes import classify, health
+from app.service import ClassificationService
 
-app = FastAPI(title="Classifier API", version="1.0.0")
 
-# Create v1 router
-v1_routes = [
-    health.router,
-    classify.router,
-]
+def create_app(
+    *,
+    settings: Settings | None = None,
+    service: ClassificationService | None = None,
+) -> FastAPI:
+    """Create an application whose classifier is owned by its lifespan."""
 
-for router in v1_routes:
-    app.include_router(router, prefix="/v1")
+    @asynccontextmanager
+    async def lifespan(application: FastAPI) -> AsyncIterator[None]:
+        application.state.classification_service = service or (
+            create_classification_service(settings or get_settings())
+        )
+        yield
 
-@app.get("/")
-async def root():
-    """Root endpoint."""
-    return {
-        "message": "Classifier API",
-        "docs": "/docs",
-        "classifier": os.getenv("CLASSIFIER_TYPE", "llm").lower(),
-    }
+    application = FastAPI(
+        title="Classifier API",
+        version="1.0.0",
+        lifespan=lifespan,
+    )
+    application.include_router(health.router, prefix="/v1")
+    application.include_router(classify.router, prefix="/v1")
+
+    @application.get("/")
+    async def root() -> dict[str, str]:
+        return {"message": "Classifier API", "docs": "/docs"}
+
+    return application
+
+
+app = create_app()

@@ -1,22 +1,26 @@
-"""Base classifier interface."""
-from abc import ABC, abstractmethod
+"""Structural classifier contract and its public failure categories."""
+
+from typing import Protocol, runtime_checkable
+
+from app.models import ClassificationResult
 
 
-class Classifier(ABC):
-    """Base class for all classifiers."""
+class ClassificationError(Exception):
+    """Base exception for expected classification failures."""
 
-    @abstractmethod
-    def classify(self, data: str) -> dict:
-        """
-        Classify input data.
-        
-        Args:
-            data: Input text to classify
-            
-        Returns:
-            Classification result dictionary with keys:
-            - result: Classification label/category
-            - confidence: Confidence score (0.0-1.0)
-            - input: Echo of input data
-        """
-        pass
+
+class ClassificationUnavailable(ClassificationError):
+    """The configured classification backend could not be reached or used."""
+
+
+class ClassificationInvalidResponse(ClassificationError):
+    """The backend returned no complete, schema-valid classification."""
+
+
+@runtime_checkable
+class Classifier(Protocol):
+    """Anything that can produce the canonical classification result."""
+
+    def classify(self, text: str) -> ClassificationResult:
+        """Classify transcript text."""
+        ...

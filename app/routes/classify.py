@@ -1,84 +1,36 @@
 """Classify endpoint."""
-import os
-from typing import Any
 
-from fastapi import APIRouter, HTTPException
-from pydantic import BaseModel
+from fastapi import APIRouter, Depends, HTTPException, Request, status
 
-from app.classifier import classify as classify_func
+from app.classifiers import ClassificationInvalidResponse, ClassificationUnavailable
+from app.models import ClassificationResponse, ClassifyRequest
+from app.service import ClassificationService
 
 router = APIRouter(tags=["classify"])
 
 
-class ClassifyRequest(BaseModel):
-    """Request model for classify endpoint."""
-    data: str
+def get_classification_service(request: Request) -> ClassificationService:
+    """Resolve the lifespan-owned service from application state."""
+
+    return request.app.state.classification_service
 
 
-class ClassifyResponse(BaseModel):
-    """Response model for classify endpoint."""
-    classification: dict[str, Any] | None = None
-    method: str
-    error: str | None = None
+@router.post("/classify", response_model=ClassificationResponse)
+def classify(
+    request: ClassifyRequest,
+    service: ClassificationService = Depends(get_classification_service),
+) -> ClassificationResponse:
+    """Classify transcript text in FastAPI's synchronous worker pool."""
 
-
-@router.post("/classify", response_model=ClassifyResponse)
-async def classify(request: ClassifyRequest):
-    """
-    Classify input data.
-
-    Uses the classifier specified by CLASSIFIER_TYPE environment variable.
-
-    For LLM classifier, returns the full structured classification from the LLM
-    including recording_format, subject_domain, scientific_content, evidence_profile, etc.
-
-    For Embedding classifier, returns a simplified classification.
-
-    Example LLM response:
-    ```
-    {
-      "classification": {
-        "recording_format": {...},
-        "subject_domain": {...},
-        "scientific_content": {...},
-        ...
-      },
-      "method": "llm"
-    }
-    ```
-    """
-    classifier_type = os.getenv("CLASSIFIER_TYPE", "llm").lower()
-    
     try:
-        result = classify_func(request.data)
-
-        # Extract classification and method
-        classification = result.pop("classification", result)
-        method = result.pop("method", classifier_type)
-        error = result.pop("error", None)
-
-        return ClassifyResponse(
-            classification=classification,
-            method=method,
-            error=error,
-        )
-    except ValueError as e:
+        return service.classify(request.text)
+    except ClassificationUnavailable as error:
         raise HTTPException(
-            status_code=400,
-            detail=f"Classification failed: {str(e)}",
-        )
-    except NotImplementedError as e:
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Classification backend is unavailable",
+        ) from error
+    except ClassificationInvalidResponse as error:
         raise HTTPException(
-            status_code=501,
-            detail=f"Not implemented: {str(e)}",
-        )
-    except RuntimeError as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Internal error during classification: {str(e)}",
-        )
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=f"Unexpected error: {str(e)}",
-        )
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="Classification backend returned an invalid response",
+        ) from error

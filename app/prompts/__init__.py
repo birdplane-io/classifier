@@ -1,24 +1,19 @@
-"""Prompts utilities."""
-from pathlib import Path
+"""Versioned classifier prompt loading."""
+
+from importlib.resources import files
+
+PROMPT_VERSION = "1"
 
 
-def load_prompt(name: str) -> str:
-    """
-    Load a prompt file by name.
-    
-    Args:
-        name: Prompt name (e.g., 'classifier' for 'classifier.md')
-        
-    Returns:
-        Prompt content as string
-        
-    Raises:
-        FileNotFoundError: If prompt file not found
-    """
-    prompt_dir = Path(__file__).parent
-    prompt_file = prompt_dir / f"{name}.md"
-    
-    if not prompt_file.exists():
-        raise FileNotFoundError(f"Prompt not found: {prompt_file}")
-    
-    return prompt_file.read_text()
+def load_classification_prompt() -> str:
+    """Load the classifier system prompt packaged with the application."""
+
+    return (
+        files("app.prompts")
+        .joinpath("classification-v1.md")
+        .read_text(encoding="utf-8")
+        .strip()
+    )
+
+
+__all__ = ["PROMPT_VERSION", "load_classification_prompt"]
