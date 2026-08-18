@@ -104,3 +104,17 @@ uv run --extra dev pytest
 ```
 
 The lightweight backend, training-label persistence, teacher/student collection, confidence-based hybrid routing, and a documented privacy/retention policy are deliberately deferred. Until those exist, the service performs no training-record or debug-response writes.
+
+## Manual testing from files
+
+Submit a local transcript file to the running classifier API:
+
+```bash
+uv run python scripts/classify_file.py samples/flock.txt
+```
+
+By default the script posts to `http://localhost:8000/v1/classify`. Override the endpoint when needed:
+
+```bash
+uv run python scripts/classify_file.py samples/flock.txt --url http://localhost:9000/v1/classify
+```
